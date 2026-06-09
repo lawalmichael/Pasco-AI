@@ -191,5 +191,5 @@ Every student deserves to walk into their exam prepared. PascoPrep AI makes that
 
 ## Contact
 
-Built by Michael Lawal  
+Built by Michael Lawal, Emeka Ezugwu & Tochukwu Olisaemeka 
 [GitHub] | [Instagram: @pascoprepai] | [TikTok: @pascoprepai]
