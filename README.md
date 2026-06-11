@@ -99,7 +99,7 @@ Payments processed via **Paystack**.
 | Layer | Technology |
 |---|---|
 | Frontend | React + Tailwind CSS |
-| Backend | Node.js + Express |
+| Backend | Python + FastAPI |
 | Database | Supabase (PostgreSQL) |
 | AI | Anthropic API (Claude) |
 | Authentication | Supabase Auth |
