@@ -6,7 +6,7 @@
 
 ## What is PascoPrep AI?
 
-PascoPrep AI is an AI-powered study and learning platform built specifically for students preparing for the WAEC (West African Examinations Council) exams. Every year, approximately 2 million students in Nigeria alone sit for WAEC exams — most of them relying on physical booklets of past questions with no explanations, no interactivity, and no intelligence behind them.
+PascoPrep AI is an AI-powered study and learning platform built specifically for students preparing for the WAEC (West African Examinations Council) exams. Every year, millions of students across West Africa sit for WAEC exams — most relying on printed practice materials that lack explanations, interactivity, and personalized learning support.
 
 PascoPrep AI changes that.
 
@@ -32,8 +32,8 @@ No existing digital platform solves all of these problems together. PascoPrep AI
 
 PascoPrep AI is three things in one:
 
-**1. A Complete Past Question Database**
-Every WAEC past exam question across all core subjects, going back decades — organized, searchable, and filterable by subject, year, and topic.
+**1. A WAEC-Aligned Question Bank** 
+A structured collection of exam-standard practice questions based on the WAEC syllabus, organized and searchable by subject, topic, and difficulty level
 
 **2. An Intelligent Practice Tool**
 Students attempt questions directly in the app, get scored instantly, and see which topics they are weak in. Progress is tracked over time so students can see themselves improving.
@@ -45,10 +45,10 @@ When a student gets a question wrong, the AI explains exactly why — breaking d
 
 ## Core Features
 
-- **Full past question bank** — all subjects, all years, fully tagged by topic
+- **WAEC-aligned question bank** — structured by subject, topic, and syllabus coverage”
 - **Practice mode** — attempt questions, get scored, review performance
 - **Wrong answer explainer** — AI breaks down every mistake in plain language
-- **Topic-based practice** — type any topic and get all past questions on that topic from every available year
+- **Topic-based practice** — access questions grouped by WAEC syllabus topics
 - **Conversational AI tutor** — ask anything, get intelligent responses, continue the conversation naturally
 - **Progress tracking** — dashboard showing scores over time, weak subjects, questions attempted
 - **Student accounts** — personalized experience saved across sessions
@@ -135,7 +135,7 @@ The schema is intentionally exam-agnostic to support future expansion beyond WAE
 ## Roadmap
 
 **Phase 1 — WAEC Nigeria (Current)**
-Launch with full WAEC past question database and AI tutor targeting Nigerian secondary school students.
+Launch a WAEC-aligned exam preparation platform for Nigerian secondary school students, featuring a structured question bank based on the WAEC syllabus and an AI tutor for explanations and learning support.
 
 **Phase 2 — West Africa**
 Expand to Ghana, Sierra Leone, The Gambia, and Liberia — all of whom share the WAEC system. Database is largely transferable.
@@ -161,7 +161,7 @@ Add Baccalauréat equivalent exams across Côte d'Ivoire, Senegal, and Cameroon 
 | KCSE | ~900,000 | Kenya |
 | ZIMSEC O-Level | ~300,000 | Zimbabwe |
 
-**Total addressable market: 10+ million students annually** sitting high-stakes secondary exams across Africa — the majority of them underserved by quality, AI-powered preparation tools.
+**Total addressable market: 10+ million students annually** sitting high-stakes secondary exams across Africa — The majority of them underserved by structured, personalized, and accessible exam preparation tools.
 
 ---
 
@@ -191,5 +191,5 @@ Every student deserves to walk into their exam prepared. PascoPrep AI makes that
 
 ## Contact
 
-Built by Michael Lawal, Emeka Ezugwu & Tochukwu Olisaemeka 
+Built by Michael Lawal, Celestine Ezugwu & Tochukwu Olisaemeka 
 [GitHub] | [Instagram: @pascoprepai] | [TikTok: @pascoprepai]
