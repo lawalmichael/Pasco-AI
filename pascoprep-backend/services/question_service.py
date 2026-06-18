@@ -1,7 +1,11 @@
 from supabase import create_client, Client
 from config import SUPABASE_URL, SUPABASE_KEY
+import httpx
 
-supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
+supabase: Client = create_client(
+    SUPABASE_URL,
+    SUPABASE_KEY,
+)
 
 def get_questions(subject: str = None, topic: str = None, country: str = None):
     query = supabase.table("questions").select("*")
