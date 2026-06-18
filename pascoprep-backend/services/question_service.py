@@ -1,11 +1,7 @@
 from supabase import create_client, Client
 from config import SUPABASE_URL, SUPABASE_KEY
-import httpx
 
-supabase: Client = create_client(
-    SUPABASE_URL,
-    SUPABASE_KEY,
-)
+supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 def get_questions(subject: str = None, topic: str = None, country: str = None):
     query = supabase.table("questions").select("*")
@@ -25,3 +21,10 @@ def get_question_by_id(question_id: str):
 def create_question(question_data: dict):
     response = supabase.table("questions").insert(question_data).execute()
     return response.data[0] if response.data else None
+
+def get_questions_for_user(user_id: str, subject: str = None, topic: str = None):
+    from services.user_service import get_user_by_id
+    user = get_user_by_id(user_id)
+    if not user:
+        return None
+    return get_questions(subject=subject, topic=topic, country=user["country"])
