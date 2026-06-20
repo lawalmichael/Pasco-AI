@@ -6,3 +6,4 @@ httpx
 pydantic[email]
 python-jose[cryptography]
 passlib[bcrypt]
+httptools==0.8.0
