@@ -6,7 +6,6 @@ from typing import Optional
 
 # This describes what a student must send us when starting a new practice session
 class StartSessionRequest(BaseModel):
-    user_id: str                       # which student is starting this session - must always be filled in
     subject: str                       # which subject they're practicing, e.g. "Mathematics" - must always be filled in
     topic_filter: Optional[str] = None # optionally narrow to one topic, e.g. "Quadratic Equations"
 
