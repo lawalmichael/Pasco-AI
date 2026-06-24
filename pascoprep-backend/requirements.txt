@@ -6,5 +6,7 @@ httpx
 pydantic[email]
 python-jose[cryptography]
 passlib[bcrypt]
+bcrypt==4.0.1
 httptools==0.8.0
 anthropic
+pyjwt==2.13.0
