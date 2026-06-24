@@ -5,7 +5,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 # This brings in our other files, where we wrote the actual instructions for signing up, getting questions, etc
-from routers import auth, questions, ai, progress
+from routers import auth, questions, ai, progress, answers, sessions
 
 # This creates our actual server - think of this as turning on the engine
 app = FastAPI(title="PascoPrep API", version="1.0.0")
@@ -26,6 +26,8 @@ app.include_router(auth.router, prefix="/auth", tags=["Auth"])
 app.include_router(questions.router, prefix="/questions", tags=["Questions"])
 app.include_router(ai.router, prefix="/ai", tags=["AI"])
 app.include_router(progress.router, prefix="/progress", tags=["Progress"])
+app.include_router(answers.router, prefix="/answers", tags=["Answers"])
+app.include_router(sessions.router, prefix="/sessions", tags=["Sessions"])
 
 # This is a simple test page - if you visit the homepage and see this message, your server is on and working
 @app.get("/")
