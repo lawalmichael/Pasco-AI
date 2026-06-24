@@ -5,8 +5,8 @@ from pydantic import BaseModel
 from typing import Optional
 
 # This describes what a student must send us when they answer a practice question
+# Notice there's no user_id here anymore - that now comes securely from their login token instead
 class SubmitAnswerRequest(BaseModel):
-    user_id: str                        # which student is answering - must always be filled in
     question_id: str                    # which question they're answering - must always be filled in
     selected_answer: str                # which option they picked, e.g. "B" - must always be filled in
     session_id: Optional[str] = None    # which practice session this belongs to - optional for now
