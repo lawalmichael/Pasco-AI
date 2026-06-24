@@ -14,3 +14,4 @@ SUPABASE_KEY = os.getenv("SUPABASE_KEY")              # the password-like key th
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")    # the key that lets us use Claude, our AI tutor
 PAYSTACK_SECRET_KEY = os.getenv("PAYSTACK_SECRET_KEY")  # the key for accepting payments (not set up yet)
 JWT_SECRET = os.getenv("JWT_SECRET")                  # a secret code used later for keeping student logins secure
+SUPABASE_SERVICE_KEY = os.getenv("SUPABASE_SERVICE_KEY")

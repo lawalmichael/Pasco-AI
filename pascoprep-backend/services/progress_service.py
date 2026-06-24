@@ -2,7 +2,7 @@
 from supabase import create_client, Client
 
 # This brings in our saved database address and secret key from config.py
-from config import SUPABASE_URL, SUPABASE_KEY
+from config import SUPABASE_URL, SUPABASE_SERVICE_KEY
 
 # date and timedelta let us calculate "today", "7 days ago", and step through days one at a time
 from datetime import date, timedelta, datetime, timezone
@@ -15,7 +15,7 @@ def get_west_africa_today():
     return datetime.now(WEST_AFRICA_OFFSET).date()
 
 # This creates one single connection to our database that every function below will reuse
-supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
+supabase: Client = create_client(SUPABASE_URL, SUPABASE_SERVICE_KEY)
 
 # This adds up every session's score and total_questions that happened on one specific day
 def get_day_summary(user_id: str, target_date: date):

@@ -2,7 +2,7 @@
 from supabase import create_client, Client
 
 # This brings in our saved database address, secret key, and Claude's API key from config.py
-from config import SUPABASE_URL, SUPABASE_KEY, ANTHROPIC_API_KEY
+from config import SUPABASE_URL, SUPABASE_SERVICE_KEY, ANTHROPIC_API_KEY
 
 # This brings in the official tool for talking to Claude
 import anthropic
@@ -11,7 +11,7 @@ import anthropic
 from services.question_service import get_question_by_id
 
 # This creates one single connection to our database that every function below will reuse
-supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
+supabase: Client = create_client(SUPABASE_URL, SUPABASE_SERVICE_KEY)
 
 # This creates one single connection to Claude that every function below will reuse
 client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)

@@ -2,7 +2,7 @@
 from supabase import create_client, Client
 
 # This brings in our saved database address and secret key from config.py
-from config import SUPABASE_URL, SUPABASE_KEY
+from config import SUPABASE_URL, SUPABASE_SERVICE_KEY
 
 # This brings in our existing function for looking up one question by its ID
 from services.question_service import get_question_by_id
@@ -11,7 +11,7 @@ from services.question_service import get_question_by_id
 from services.session_service import update_session_progress
 
 # This creates one single connection to our database that every function below will reuse
-supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
+supabase: Client = create_client(SUPABASE_URL, SUPABASE_SERVICE_KEY)
 
 # This is the main function our router will call - it checks the student's answer and saves the result
 def submit_answer(user_id: str, question_id: str, selected_answer: str, session_id: str = None):

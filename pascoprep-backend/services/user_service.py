@@ -2,13 +2,13 @@
 from supabase import create_client, Client
 
 # This brings in our saved database address and secret key from config.py
-from config import SUPABASE_URL, SUPABASE_KEY
+from config import SUPABASE_URL, SUPABASE_SERVICE_KEY
 
 # CryptContext is the tool that scrambles passwords into something unreadable, and checks them later
 from passlib.context import CryptContext
 
 # This creates one single connection to our database that every function below will reuse
-supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
+supabase: Client = create_client(SUPABASE_URL, SUPABASE_SERVICE_KEY)
 
 # This sets up our password-scrambling tool, using a well-tested scrambling method called bcrypt
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")

@@ -2,10 +2,10 @@
 from supabase import create_client, Client
 
 # This brings in our saved database address and secret key from config.py
-from config import SUPABASE_URL, SUPABASE_KEY
+from config import SUPABASE_URL, SUPABASE_SERVICE_KEY
 
 # This creates one single connection to our database that every function below will reuse
-supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
+supabase: Client = create_client(SUPABASE_URL, SUPABASE_SERVICE_KEY)
 
 # This gets a list of questions, and can optionally narrow the list down by subject, topic, or country
 # Writing subject: str = None means "if nobody tells us a subject, just skip that filter"
